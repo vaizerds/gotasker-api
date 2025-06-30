@@ -13,8 +13,12 @@ var DB *gorm.DB
 func ConnectDB() {
 	database, err := gorm.Open(sqlite.Open("gotasker.db"), &gorm.Config{})
 	if err != nil {
-		log.Fatal("Failed to connect to database")
+		log.Fatalf("Failed to connect to database: %v", err)
 	}
 	DB = database
-	DB.AutoMigrate(&models.User{}, &models.Task{})
+
+	err = DB.AutoMigrate(&models.User{}, &models.Task{})
+	if err != nil {
+		log.Fatalf("AutoMigrate failed: %v", err)
+	}
 }
