@@ -4,8 +4,8 @@ type Task struct {
 	ID     uint   `gorm:"primaryKey"`
 	Title  string `gorm:"not null"`
 	Done   bool
-	UserID uint
-	User   User `gorm:"foreignKey:UserID"`
+	UserID uint `gorm:"not null"`
+	User   User `gorm:"not null"`
 }
 
 // package models
