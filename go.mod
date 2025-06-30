@@ -1,4 +1,4 @@
-module github.com/Vaizerds/gotasker-api
+module github.com/vaizerds/gotasker-api
 
 go 1.22
 
