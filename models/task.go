@@ -1,18 +1,8 @@
 package models
 
 type Task struct {
-	ID     uint   `gorm:"primaryKey"`
-	Title  string `gorm:"not null"`
+	ID     uint `gorm:"primaryKey"`
+	Title  string
 	Done   bool
-	UserID uint `gorm:"not null"`
-	User   User `gorm:"not null"`
+	UserID uint
 }
-
-// package models
-
-// type Task struct {
-// 	ID     uint   `gorm:"primaryKey"`
-// 	Title  string
-// 	Done   bool
-// 	UserID uint
-// }
