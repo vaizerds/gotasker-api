@@ -1,11 +1,10 @@
 package controllers
 
 import (
-	"net/http"
-
 	"github.com/gin-gonic/gin"
 	"github.com/vaizerds/gotasker-api/config"
 	"github.com/vaizerds/gotasker-api/models"
+	"net/http"
 )
 
 func GetTasks(c *gin.Context) {
