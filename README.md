@@ -30,6 +30,8 @@ A RESTful API for task management, built in **Go** using **Gin** and **GORM**.
 git clone https://github.com/vaizerds/gotasker-api.git
 cd gotasker-api
 
+
+
 # Configure your environment variables for PostgreSQL:
 # DB_HOST, DB_USER, DB_PASSWORD, DB_NAME, DB_PORT
 
