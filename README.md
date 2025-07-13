@@ -1,20 +1,20 @@
 # 🚀 GoTasker API
 
-Uma API RESTful para gerenciamento de tarefas, construída em **Go** usando **Gin**, **GORM** e autenticação com **JWT**.
+A RESTful API for task management, built in **Go** using **Gin** and **GORM**.
 
 ---
 
-## ✨ Funcionalidades
+## ✨ Features
 
-- 👤 Registro e login de usuários  
-- 🔐 Autenticação baseada em JWT  
-- 📝 CRUD completo para tarefas (protegido)  
-- 🐘 Suporte a **PostgreSQL** (configurável)  
-- 🐳 Pronto para rodar com Docker  
+- 👤 User registration and login  
+- 🔐 JWT-based authentication  
+- 📝 Full CRUD operations for tasks (protected)  
+- 🐘 Support for **PostgreSQL** (configurable)  
+- 🐳 Ready to run with Docker  
 
 ---
 
-## ⚙️ Tecnologias
+## ⚙️ Tech Stack
 
 - [Go](https://golang.org/)  
 - [Gin](https://github.com/gin-gonic/gin) (Web Framework)  
@@ -24,13 +24,13 @@ Uma API RESTful para gerenciamento de tarefas, construída em **Go** usando **Gi
 
 ---
 
-## 🛠️ Como rodar localmente
+## 🛠️ How to Run Locally
 
 ```bash
 git clone https://github.com/vaizerds/gotasker-api.git
 cd gotasker-api
 
-# Configure as variáveis de ambiente para o PostgreSQL:
+# Configure your environment variables for PostgreSQL:
 # DB_HOST, DB_USER, DB_PASSWORD, DB_NAME, DB_PORT
 
 go run cmd/main.go
